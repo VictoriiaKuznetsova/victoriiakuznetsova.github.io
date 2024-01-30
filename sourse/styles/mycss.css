@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+
+
+body {
+    font-family: Rubik, serif;
+    background: linear-gradient(90deg, #9eaea3 0%, #ffffff 100%);
+}
+
+.nav-link {
+    color: rgb(240, 222, 186);
+}
+
+.navbar-nav .nav-link.active {
+color: rgb(240, 222, 186);
+}
+.navbar-brand img {
+    width: 40px;
+}
+.navbar-toggler {
+    background-color: rgb(210, 202, 202);
+}
+.sidebar {
+    color: rgb(32, 31, 31);
+    background: linear-gradient(270deg, #9eaea3 0%, #ffffff 100%);
+}
+.card {
+    background: linear-gradient(270deg, #e0e6e2 0%, #ffffff 100%); 
+}
+.card a {
+    text-decoration: none;
+    color: rgb(32, 31, 31);
+}
+.slide-text, .footer-text {
+    color: rgb(32, 31, 31);
+    margin: auto auto;
+}
+
+footer {
+    background: linear-gradient(270deg, #9eaea3 0%, #ffffff 100%);   
+}
+
+.media-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-anim {
+    animation: callanim 2s ease 0s 1 normal forwards;
+}
+
+@keyframes callanim {
+	0%,
+	100% {
+		transform: rotate(0deg);
+		transform-origin: 50% 100%;
+	}
+
+	10% {
+		transform: rotate(2deg);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: rotate(-4deg);
+	}
+
+	30%,
+	50%,
+	70% {
+		transform: rotate(4deg);
+	}
+
+	80% {
+		transform: rotate(-2deg);
+	}
+
+	90% {
+		transform: rotate(2deg);
+	}
+}
+
+
+@media (max-width: 755px) {
+    .carousel-indicators {
+        display: none;
+    }
+}
+
